@@ -37,3 +37,13 @@ Version: 1.0.0
   background-size: 1.6rem 1.6rem;
   background-repeat: no-repeat;
 }
+
+
+/*Add a newLine after Android Playstore Photo */
+/*The <br> does not apply to desktops*/
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #brk_phones{
+    display: none; /* hide the BR tag for wider screens (i.e. disable the line break) */
+  }
+}

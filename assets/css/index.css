@@ -1,0 +1,39 @@
+/*
+Author: Brian Zhou
+Version: 1.0.0
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# H4 for privacy policy
+--------------------------------------------------------------*/
+/*
+# Normalize
+--------------------------------------------------------------*>*/
+
+.index_h2{
+    color:yellow;
+    font-family:Courier;
+}
+
+.left_side_des{
+    /*background-color:yellow;*/
+}
+
+
+.right_side_des{
+    /*background-color:maroon;*/
+}
+
+.resources_list{
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+.resource_li{
+  padding-left: 2rem;
+  background-image: url(star1.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}

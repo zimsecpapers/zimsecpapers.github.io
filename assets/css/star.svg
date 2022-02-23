@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 673.3 672.7" version="1.1">
+  <defs id="defs4">
+    <filter id="filter3981" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur3983" stdDeviation="4.6076755"/>
+    </filter>
+    <filter id="filter3993" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur3995" stdDeviation="3.437023"/>
+    </filter>
+    <filter id="filter4051" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur4053" stdDeviation="18.502972"/>
+    </filter>
+    <filter id="filter4249" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur4251" stdDeviation="1.4072714"/>
+    </filter>
+    <filter id="filter4257" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur4259" stdDeviation="1.2099683"/>
+    </filter>
+    <filter id="filter3872" height="1.6269" width="1.2561" y="-.31346" x="-.12804" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur3874" stdDeviation="2.351255"/>
+    </filter>
+    <radialGradient id="radialGradient3905" gradientUnits="userSpaceOnUse" cy="479.51" cx="381.43" gradientTransform="matrix(-.37097 -1.5118 1.9705 -.13533 -421.92 1121.1)" r="55.714">
+      <stop id="stop3813" stop-color="#fff" offset="0"/>
+      <stop id="stop3821" stop-color="#ccc" offset=".3175"/>
+      <stop id="stop3815" stop-opacity="0" offset="1"/>
+    </radialGradient>
+    <radialGradient id="radialGradient3907" gradientUnits="userSpaceOnUse" cy="479.03" cx="388.52" gradientTransform="matrix(1.3479 .029771 -.029074 1.3163 -121.22 -163.08)" r="21.171">
+      <stop id="stop3861" stop-color="#808080" offset="0"/>
+      <stop id="stop3859" offset=".92597"/>
+      <stop id="stop3855" stop-opacity="0" offset="1"/>
+    </radialGradient>
+    <linearGradient id="linearGradient3096" y2="741.15" gradientUnits="userSpaceOnUse" x2="280.21" gradientTransform="translate(-20.791 -345.79)" y1="916.85" x1="176.85">
+      <stop id="stop4007" stop-color="#808000" offset="0"/>
+      <stop id="stop4009" stop-color="#808000" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3106" y2="698.66" gradientUnits="userSpaceOnUse" x2="594.87" gradientTransform="matrix(.99994 .010685 -.010685 .99994 -10.141 -351.82)" y1="823.83" x1="670.66">
+      <stop id="stop3999" stop-color="#808000" offset="0"/>
+      <stop id="stop4001" stop-color="#808000" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3111" y2="811.2" gradientUnits="userSpaceOnUse" x2="401.94" gradientTransform="translate(-17.132 -344.88)" y1="1009.9" x1="424.9">
+      <stop id="stop3963" stop-color="#808000" offset="0"/>
+      <stop id="stop3965" stop-color="#ff0" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3114" y2="656.17" gradientUnits="userSpaceOnUse" x2="426.05" gradientTransform="matrix(.99987 .016145 -.016145 .99987 -9.5 -354.86)" y1="559.7" x1="500.7">
+      <stop id="stop4015" stop-color="#808000" offset="0"/>
+      <stop id="stop4017" stop-color="#808000" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3117" y2="876.66" gradientUnits="userSpaceOnUse" x2="552.38" gradientTransform="translate(-18.961 -344.88)" y1="989.2" x1="471.99">
+      <stop id="stop3971" stop-color="#808000" offset="0"/>
+      <stop id="stop3973" stop-color="#808000" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(-88.51 -104.59)">
+    <path id="path4091" filter="url(#filter4051)" transform="matrix(1.061 0 0 1.0702 188.13 137.12)" fill-opacity=".34746" d="m431.43 512.36-179.54-67.96-157.76 109.36 9.16-191.75-152.77-116.25 185.19-50.54 63.36-181.21 105.3 160.51l191.92 4.2555-120.12 149.74z"/>
+    <path id="path4095" d="m431.43 512.36-179.54-67.96-157.76 109.36 9.16-191.75-152.77-116.25 185.19-50.54 63.36-181.21 105.3 160.51l191.92 4.2555-120.12 149.74z" fill="#ff0" transform="translate(183.96 134.66)"/>
+    <path id="path4097" filter="url(#filter3993)" d="m420.46 439.02 17.904 140.68 176.49 68.208z" fill="url(#linearGradient3117)"/>
+    <path id="path4099" d="m415.41 437.34 72.87-129.29-106.51-163.73z" fill="url(#linearGradient3114)"/>
+    <path id="path4101" filter="url(#filter3981)" d="m419.85 436.69-138.46 249.71 155.77-107.96z" fill="url(#linearGradient3111)"/>
+    <path id="path4103" filter="url(#filter4249)" d="m342.73 727.55c8.2708-30.211 34.549-44.052 64.085-54.93 6.1403-3.6532-1.8778-15.124-13.733-10.299-27.378 11.107-50.008 27.259-61.797 54.93-4.499 11.043 7.5316 18.484 11.444 10.299z" fill="#808000" transform="matrix(.99990 -.014076 .014076 .99990 -35.613 -326.5)"/>
+    <path id="path4105" filter="url(#filter4257)" d="m512.91 370.11c-16.232-26.789-45.297-32.9-76.683-35.27-6.9063-1.831-2.338-15.06 10.385-13.668 29.374 3.1812 55.563 12.515 74.482 35.897 7.3524 9.3876-2.1791 19.84-8.184 13.041z" fill="#808000"/>
+    <path id="path4123" d="m420.31 437.84 138.68 27.914 120.95-147.92z" fill="url(#linearGradient3106)"/>
+    <g id="g4107" transform="translate(-12.071 -334.07)">
+      <g id="g4109">
+        <path id="path4111" d="m437.14 479.51c0 19.724-24.944 35.714-55.714 35.714s-55.714-15.99-55.714-35.714 24.944-35.714 55.714-35.714 55.714 15.99 55.714 35.714z" fill="url(#radialGradient3905)" transform="matrix(.68163 0 0 1.2884 210.08 119.47)"/>
+        <path id="path4113" d="m409.69 479.03c0 10.744-9.4786 19.455-21.171 19.455s-21.171-8.7101-21.171-19.455c0-10.744 9.4786-19.455 21.171-19.455s21.171 8.7101 21.171 19.455z" fill="url(#radialGradient3907)" transform="translate(83.85 259.37)"/>
+      </g>
+      <g id="g4115">
+        <path id="path4117" d="m437.14 479.51c0 19.724-24.944 35.714-55.714 35.714s-55.714-15.99-55.714-35.714 24.944-35.714 55.714-35.714 55.714 15.99 55.714 35.714z" fill="url(#radialGradient3905)" transform="matrix(.68163 0 0 1.2884 130.47 125.46)"/>
+        <path id="path4119" d="m409.69 479.03c0 10.744-9.4786 19.455-21.171 19.455s-21.171-8.7101-21.171-19.455c0-10.744 9.4786-19.455 21.171-19.455s21.171 8.7101 21.171 19.455z" fill="url(#radialGradient3907)" transform="translate(4.4766 265.62)"/>
+      </g>
+    </g>
+    <path id="path4121" d="m135.31 379.99 281.36 57.124-130.45 58.829z" fill="url(#linearGradient3096)"/>
+    <path id="path4125" stroke="#000" stroke-width="1.0845px" d="m305.49 464.24c126.86 89.059 184.39 1.9383 244.63-67.926-42.744 37.57-88.858 238.93-244.63 67.926z"/>
+    <path id="path4261" d="m399.95 525c8.3989-18.721 9.0421-16.355 25.329-6.3322 4.4563-22.809 13.072-10.562 29.128-1.2664-2.7693 5.4808-46.044 22.774-54.457 7.5987z" fill="#800000"/>
+    <path id="path4263" filter="url(#filter3872)" d="m402.52 521.63c4.1932-11.848 12.749-9.2996 22.939-1.356 2.3325-2.995 1.7657-23.533 21.131-5.1981-7.3187 0.008-17.72-9.3247-18.508 10.473-8.7009-7.9696-17.29-11.817-25.563-3.9192z" fill="#f00"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Smiling Star</dc:title>
+        <dc:date>2011-01-25T21:37:13</dc:date>
+        <dc:description>A Smiling Star created with Inkscape.</dc:description>
+        <dc:source>http://openclipart.org/detail/110011/smiling-star-by-merlin2525</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Merlin2525</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>3d</rdf:li>
+            <rdf:li>Noel</rdf:li>
+            <rdf:li>christmas</rdf:li>
+            <rdf:li>ciel</rdf:li>
+            <rdf:li>cielo</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>contenta</rdf:li>
+            <rdf:li>cosmic</rdf:li>
+            <rdf:li>cosmo</rdf:li>
+            <rdf:li>cosmos</rdf:li>
+            <rdf:li>cuento</rdf:li>
+            <rdf:li>d'enfants</rdf:li>
+            <rdf:li>de</rdf:li>
+            <rdf:li>ecole</rdf:li>
+            <rdf:li>el</rdf:li>
+            <rdf:li>espace</rdf:li>
+            <rdf:li>espacio</rdf:li>
+            <rdf:li>estrella</rdf:li>
+            <rdf:li>estrellas</rdf:li>
+            <rdf:li>etoile</rdf:li>
+            <rdf:li>etoiles</rdf:li>
+            <rdf:li>feliz</rdf:li>
+            <rdf:li>happy</rdf:li>
+            <rdf:li>heaven</rdf:li>
+            <rdf:li>histoire</rdf:li>
+            <rdf:li>holidays</rdf:li>
+            <rdf:li>infancia</rdf:li>
+            <rdf:li>jardin</rdf:li>
+            <rdf:li>jard&#xC3;&#xAD;n</rdf:li>
+            <rdf:li>kindergarten</rdf:li>
+            <rdf:li>l'espace</rdf:li>
+            <rdf:li>la</rdf:li>
+            <rdf:li>maternelle</rdf:li>
+            <rdf:li>navidad</rdf:li>
+            <rdf:li>outer</rdf:li>
+            <rdf:li>pascua</rdf:li>
+            <rdf:li>smile</rdf:li>
+            <rdf:li>smiling</rdf:li>
+            <rdf:li>sonriendo</rdf:li>
+            <rdf:li>sonriente</rdf:li>
+            <rdf:li>sonrisa</rdf:li>
+            <rdf:li>souriant</rdf:li>
+            <rdf:li>sourire</rdf:li>
+            <rdf:li>space</rdf:li>
+            <rdf:li>star</rdf:li>
+            <rdf:li>stars</rdf:li>
+            <rdf:li>story</rdf:li>
+            <rdf:li>vacaciones</rdf:li>
+            <rdf:li>vacances</rdf:li>
+            <rdf:li>x-mas</rdf:li>
+            <rdf:li>xmas</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

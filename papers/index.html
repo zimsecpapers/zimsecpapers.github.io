@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Zimsec O and A level past exam questions and marking schemes</title>
+  <title id="title">Zimsec O and A level past exam questions and marking schemes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title id="title">Single paper page</title>
@@ -211,7 +211,8 @@
 <script type="text/javascript" src="../js/default_papers.js"></script>
 <script>
   /* takes paper-id from url and hunts for the paper */
-  let page_id=removeByIndex(location.search,0);
+  let temp_id=removeByIndex(location.search,0);
+  let page_id=temp_id.split("&")[0];
 
   let data = getData(); //(with path)
     //console.log(dt);

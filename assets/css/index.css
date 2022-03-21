@@ -38,7 +38,6 @@ Version: 1.0.0
   background-repeat: no-repeat;
 }
 
-
 /*Add a newLine after Android Playstore Photo */
 /*The <br> does not apply to desktops*/
 @media only screen and (min-width: 768px) {
@@ -47,3 +46,4 @@ Version: 1.0.0
     display: none; /* hide the BR tag for wider screens (i.e. disable the line break) */
   }
 }
+

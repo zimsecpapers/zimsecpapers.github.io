@@ -1,0 +1,71 @@
+
+
+.link_style{
+  text-decoration: none; /* no underline */
+}
+
+.pdf_image_style{
+	width:100px;
+}
+
+.card_style{
+	padding: 5px;
+}
+
+
+.card_title_style{
+	font-family:Courier;
+	font-weight: bolder;
+}
+
+.file_level_style{
+	font-family:Courier;	
+}
+
+.ms_style{
+	color: green;
+	font-family:Courier;
+}
+
+.btn_qp {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn_ms {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.couri{
+  font-family:Courier;
+}
+.white_courier{
+    color:white;
+    font-family:Courier;
+}
+
+.love_icon{
+  color: red;
+}
+
+.social_medi_icons{
+  color:white;
+  font-size: 40px;
+}
+
+
+
+.follow_us{
+  color:yellow;
+  font-family:Courier;
+}

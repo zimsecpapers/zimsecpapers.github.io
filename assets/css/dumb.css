@@ -1,0 +1,73 @@
+body {
+  margin-top: 20px;
+}
+
+// Bootstrap resets
+.card {
+  border: none;
+}
+.card-img {
+  border-radius: 0;
+}
+
+.vgr-cards {
+  .card {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    margin-bottom: 40px;
+
+    &:nth-child(even) .card-img-body {
+      order: 2;
+    }
+
+    &:nth-child(even) .card-body {
+      padding-left: 0;
+      padding-right: 1.25rem; 
+    }
+    
+    @media (max-width: 576px) {
+      display: block;
+    }
+    
+  }
+
+  .card-img-body {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    
+    @media (max-width: 576px) {
+      width: 100%;
+      height: 200px;
+          margin-bottom: 20px;
+    }
+    
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    @media (max-width: 1140px) {
+          margin: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+    }
+    
+  }
+
+  .card-body {
+    flex: 2;
+    padding: 0 0 0 1.25rem;
+    
+    @media (max-width: 576px) {
+      padding: 0;
+    }
+    
+  }
+}

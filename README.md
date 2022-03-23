@@ -5,6 +5,12 @@ width="200" hspace="10" vspace="10">
 
 zimsec papers is available on the Google Play Store.
 
+## Support 💗
+
+All the zimsec resources/notes were uploaded by other students and they will always be available for free. Any contributions are welcome. Here are a few ways you can help:
+ * [Report bugs and make suggestions.](https://zimsecpapers.herokuapp.com/feedback)
+ * [Upload resources you have.](https://zimsecpapers.herokuapp.com/upload)
+
 <p align="left">
 <a href="https://play.google.com/store/apps/details?id=com.edufree.zimsec">
     <img alt="Get it on Google Play"
@@ -12,13 +18,6 @@ zimsec papers is available on the Google Play Store.
         src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
 </a>  
 </p>
-
-## Support 💗
-
-All the zimsec resources/notes were uploaded by other students and they will always be available for free. Any contributions are welcome. Here are a few ways you can help:
- * [Report bugs and make suggestions.](https://zimsecpapers.herokuapp.com/feedback)
- * [Upload resources you have.](https://zimsecpapers.herokuapp.com/upload)
-
 
 ## About
 zimsec papers has been made for you to comfortably access zimsec resources, revise and pass you exams.

@@ -1,6 +1,6 @@
 # zimsec papers - Android App
 
-<img src="../assets/images/zimsec_logo1.png" align="left"
+<img src="/assets/images/zimsec_logo1.png" align="left"
 width="200" hspace="10" vspace="10">
 
 zimsec papers is available on the Google Play Store.
@@ -33,9 +33,9 @@ The android app lets you :
 
 ## Screenshots
 
-[<img src="../assets/images/screenshot1.png" align="left"
+[<img src="/assets/images/screenshot1.png" align="left"
 width="200"
-    hspace="10" vspace="10">](../assets/images/screenshot1.png)
-[<img src="../assets/images/screenshot2.png" align="center"
+    hspace="10" vspace="10">](/assets/images/screenshot1.png)
+[<img src="/assets/images/screenshot2.png" align="center"
 width="200"
-    hspace="10" vspace="10">](../assets/images/screenshot2.png)
+    hspace="10" vspace="10">](/assets/images/screenshot2.png)

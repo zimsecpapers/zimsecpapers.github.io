@@ -3,6 +3,17 @@ var CODEFELLOW_VOTING_URL="https://codefellow.vercel.app/privacy/policy";
 // display data
 displayVotingData();
 
+
+window.addEventListener("beforeunload", function (event) {
+   //your code goes here on location change
+   // console.log("!! <changes detected>> : "+document.location.href);
+   // display data
+   displayVotingData();
+});
+
+
+
+
 function displayVotingData(){
     let cookie_name=getDateCookieName();
     let count=getTodayCookieCount(cookie_name);
@@ -17,6 +28,12 @@ function displayVotingData(){
         message="*Thank you for voting today, do it again tommorow";
     }
     document.getElementById("voting_status").innerHTML=message;
+
+    // setting the history
+    // Check the link of website user came from
+    //const linkOfTheWebsiteUserCame = document.referrer;
+    //console.log("<@>"+linkOfTheWebsiteUserCame);
+    //document.getElementById("history").innerHTML=window.history;
 }// end of  displayVotingData
 
 
@@ -24,12 +41,8 @@ function handleVoteButtonClick(){
   // console.log("Vote button has been clicked <::> ");
   increaseCookieCounter();
 
-  // display data
-  displayVotingData();
-
   // Go to voting Page
   window.location.href = CODEFELLOW_VOTING_URL;
-
 }// end of handleVoteButtonClick()
 
 function increaseCookieCounter(){

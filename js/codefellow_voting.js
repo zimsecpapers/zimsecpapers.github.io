@@ -8,7 +8,7 @@ window.addEventListener("beforeunload", function (event) {
    //your code goes here on location change
    // console.log("!! <changes detected>> : "+document.location.href);
    // display data
-   displayVotingData();
+   //displayVotingData();
 });
 
 

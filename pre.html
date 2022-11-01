@@ -69,7 +69,7 @@
           </li>
         </ul>
       </div>
-    </nav><!---[End of Nav]----------->
+  </nav><!-- [End of Nav]----------------->
 
       <!--|
       / Download
@@ -77,58 +77,46 @@
       <section id="" class="">
         <div class="container-sm">
             <!------------------->
-            <div class="row">
+            <div class="row"> 
                 <!---Left side -->
                 <div class="col-sm-7 left_side_des" style="color:white;">
-                    <div>
-                        <h2 class="index_h2">Download the Zimsec Papers App</h2>
-                        <p>Get Access to O and A level past exam papers and marking schemes</p>
+                    <div class="jumbotron">
+                        <h4 style="color:black">Our sponsor,CodeFellow, is a top 30 finalist of the HMS App Innovation Contest by Huawei.</h4>
+
+                        <br/>
+                        <p style="color:black">Vote for CodeFellow so that we can keep zimsec resources free forever!</p>
+
+
+                        <p style="color:black">Simply click on the button below and select CodeFellow.</p>
+
+                        <button onclick="handleVoteButtonClick()" type="button" class="btn btn-primary">Go to Vote</button>
+
+                        <br/><br/>
+                        <p id="voting_status" style="color:black"></p>
+
                     </div>
 
-                    <div class="">
+                    <div class="" style="display:none">
                         <a class="download-btn" id="play_store_id" href="https://play.google.com/store/apps/details?id=com.edufree.zimsec"><img src="assets/images/play_store_btn.png" alt="Play Store"></a>
                         &nbsp; &nbsp; &nbsp; &nbsp;<br id="brk_phones"/><br id="brk_phones"/>
-                        <a class="download-btn" href="#"><img src="assets/images/app_store_btn.png" alt="App Store"></a>
                     </div>
 
                     <!---Features------->
                     <section class="section">
                           <div class="">
                               <!--|Section Header|-->
-                              </br></br>
-                              <header class="">
-                                <h2 class="index_h2">Resources Available on the app</h2>
-                              </header> <!--|End Section Header|-->
-                              <!--|List|-->
-                              <ul class="resources_list">
-                                  <li class="resource_li">O level past exam questions and marking schemes</li>
-                                  <li class="resource_li">A level past exam questions and marking schemes</li>
-                                  <li class="resource_li">O and A level Notes</li>
-                                  <li class="resource_li">A level blue books</li>
-                                  <li class="resource_li">O level green books </li>
-                              </ul>
-
-                              <header class="">
-                                <h2 class="index_h2">What you will like about Zimsec papers</h2>
-                              </header> <!--|End Section Header|-->
-                              <!--|List|-->
-                              <ul class="resources_list">
-                                  <li class="resource_li">You can share zimsec study materials you have with other candidates.</li>
-                                  <li class="resource_li">Resources are added frequently.</li>
-                              </ul>
-
                           </div>
                     </section>
-                    <!---END OF FEATURES---->
+                    <!--- END OF FEATURES ---->
 
-                </div><!---End of Left side -->
+                </div><!--- End of Left side -->
 
                 <!--- Right side -->
                 <div class="col-sm-5 right_side_des" style="">
                     <div>
-                        <img class="img-fluid" src="assets/images/zimsec_main2.png" alt="Zimsec papers" width="300" height="110">
+                        <img class="img-fluid" src="assets/images/codefellow_appsup.png" alt="Zimsec papers" width="600" style="">
                     </div>
-                </div><!---End of Left side -->
+                </div><!--- End of Left side -->
             </div>
             <!------------------->
         </div>
@@ -217,6 +205,7 @@
 </div>
 
 <script type="text/javascript" src="js/default_papers.js"></script>
+<script type="text/javascript" src="js/codefellow_voting.js"></script>
 <script type="text/javascript">
   function handleDropdown(value){
     //console.log("drop down >> "+value);

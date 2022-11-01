@@ -4,15 +4,13 @@ var CODEFELLOW_VOTING_URL="https://codefellow.vercel.app/privacy/policy";
 displayVotingData();
 
 
-window.addEventListener("beforeunload", function (event) {
-   //your code goes here on location change
-   // console.log("!! <changes detected>> : "+document.location.href);
-   // display data
-   //displayVotingData();
-});
-
-
-
+(function () {
+    window.onpageshow = function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    };
+})();
 
 function displayVotingData(){
     let cookie_name=getDateCookieName();

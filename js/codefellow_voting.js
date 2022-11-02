@@ -26,6 +26,9 @@ function defaultSettings(){
 
             if(count===0){
                 displayAlertDialog();
+            }else{
+                // Go to voting Page
+                window.location.href=Flink;                
             }
         });
     });

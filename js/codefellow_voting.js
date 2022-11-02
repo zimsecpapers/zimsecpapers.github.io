@@ -6,8 +6,7 @@ displayVotingData();
 (function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
-            // window.location.reload(); ---
-            // window ---- 
+            // window.location.reload(); 
             displayVotingData();
         }
     };

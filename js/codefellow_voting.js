@@ -7,8 +7,8 @@ displayVotingData();
 (function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
-            window.location.reload();
-            //displayVotingData();  
+            //window.location.reload();
+            displayVotingData();
         }
     };
 })();
@@ -18,7 +18,7 @@ function displayVotingData(){
     let count=getTodayCookieCount(cookie_name);
     let message="";
     if(count===0){
-        message="*You haven't voted today, please vote";
+        message="*You can vote 3 times per day";
     }else if (count==1) {
         message="*You have voted once today, you can vote 2 more times";
     }else if (count===2) {
@@ -33,6 +33,7 @@ function displayVotingData(){
     //const linkOfTheWebsiteUserCame = document.referrer;
     //console.log("<@>"+linkOfTheWebsiteUserCame);
     //document.getElementById("history").innerHTML=window.history;
+
 }// end of  displayVotingData
 
 

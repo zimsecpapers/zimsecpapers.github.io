@@ -26,13 +26,9 @@ function displayVotingData(){
     }else {
         message="*Thank you for voting today, do it again tommorow";
     }
-    document.getElementById("voting_status").innerHTML=message; 
-    // setting the history
-    // Check the link of website user came from
-    //const linkOfTheWebsiteUserCame = document.referrer;
-    //console.log("<@>"+linkOfTheWebsiteUserCame);
-    //document.getElementById("history").innerHTML=window.history;
+    document.getElementById("voting_status").innerHTML=message;
 
+    // setting the history
 }// end of  displayVotingData
 
 

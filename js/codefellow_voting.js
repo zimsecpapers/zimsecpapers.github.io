@@ -3,15 +3,16 @@ var CODEFELLOW_VOTING_URL="https://codefellow.vercel.app/privacy/policy";
 // display data
 displayVotingData();
 
-
 (function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
-            //window.location.reload();
+            // window.location.reload(); ---
+            // window ---- 
             displayVotingData();
         }
     };
 })();
+
 
 function displayVotingData(){
     let cookie_name=getDateCookieName();

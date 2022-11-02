@@ -30,7 +30,6 @@ function displayVotingData(){
     // setting the history
 }// end of  displayVotingData
 
-
 function handleVoteButtonClick(){
   // console.log("Vote button has been clicked <::> ");
   increaseCookieCounter();

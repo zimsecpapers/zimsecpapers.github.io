@@ -27,7 +27,6 @@ function displayVotingData(){
         message="*Thank you for voting today, do it again tommorow";
     }
     document.getElementById("voting_status").innerHTML=message;
-
     // setting the history
 }// end of  displayVotingData
 

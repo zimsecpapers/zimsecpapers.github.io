@@ -2,15 +2,46 @@
 var CODEFELLOW_VOTING_URL="https://codefellow.vercel.app/privacy/policy";
 // display data
 displayVotingData();
+defaultSettings();
 
 (function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
             // window.location.reload();
-            displayVotingData(); 
+            displayVotingData();
         }
     };
 })();
+
+
+function defaultSettings(){
+    //document.getElementById('file_download_id').style.visibility = 'hidden';
+    $(document).ready(function() {
+        $('a').on("click", function(e) {
+            e.preventDefault();
+            // Execute default action
+            let cookie_name=getDateCookieName();
+            let count=getTodayCookieCount(cookie_name);
+            let Flink=e.currentTarget.href;
+
+            if(count===0){
+                displayAlertDialog();
+            }
+        });
+    });
+}
+
+function displayAlertDialog() {
+  var txt;
+  if (confirm("Go and vote for CodeFellow, if you want to download zimsec resources (vote 3 times per day)")) {
+    txt = "You pressed OK";
+     handleVoteButtonClick();
+  } else {
+    txt = "You pressed Cancel!";
+     handleVoteButtonClick();
+  }
+  //console.log(txt);
+}//end of myFunction
 
 function displayVotingData(){
     let cookie_name=getDateCookieName();

@@ -6,7 +6,7 @@ displayVotingData();
 (function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
-            // window.location.reload(); 
+            // window.location.reload();
             displayVotingData();
         }
     };
@@ -24,7 +24,7 @@ function displayVotingData(){
     }else if (count===2) {
         message="*You have voted 2 times, you can still vote again";
     }else {
-        message="*Thank you for voting today, do it again tommorow";
+        message="*Thank you for voting today ♥, do it again tommorow";
     }
     document.getElementById("voting_status").innerHTML=message;
 

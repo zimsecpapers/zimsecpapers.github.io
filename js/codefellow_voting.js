@@ -12,7 +12,6 @@ displayVotingData();
     };
 })();
 
-
 function displayVotingData(){
     let cookie_name=getDateCookieName();
     let count=getTodayCookieCount(cookie_name);

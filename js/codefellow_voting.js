@@ -1,5 +1,8 @@
 
-var CODEFELLOW_VOTING_URL="https://codefellow.vercel.app/privacy/policy";
+//var CODEFELLOW_VOTING_URL="https://codefellow.vercel.app/privacy/policy";
+
+var CODEFELLOW_VOTING_URL="https://developer.huawei.com/consumer/en/activity/digixActivity/digixdetail/201655277856046898?pageIndex=5&regionId=Middle East %26 Africa&workId=201667836279284659";
+
 // display data
 displayVotingData();
 defaultSettings();

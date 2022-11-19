@@ -27,9 +27,9 @@
 
     <!------ADSENSE ADS Identity Code------->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9096954167667005"
-     crossorigin="anonymous">
+     crossorigin="anonymous"> 
   </script>
-
+  
 </head>
 
 <style>
@@ -40,7 +40,7 @@
 
     <div class="container-sm-fluid">
       <!--|
-      /NavBar
+      /NavBar 
       /=========================================================================================|-->
     <nav class="navbar navbar-expand-md navbar-dark">
         <!--Logo--->
@@ -69,41 +69,12 @@
           </li>
         </ul>
       </div>
-    </nav><!---[End of Nav]----------->
-
+    </nav><!---[End of Nav]-----------> 
+    
       <!--|Single Paper Diplay
       /=========================================================================================|-->
       <section id="" class="">
         <div class="container-sm">
-
-            <!---- codefellow voting banner--->
-            <div class="row">
-
-                <!----CodeFellow Story-->
-                <div class="col-sm-7 left_side_des" style="color:white;">
-                    <div class="jumbotron" style="padding:12px;">
-
-                        <h4 style="color:black">Our sponsor, CodeFellow, is a top 30 finalist of the HMS App Innovation Contest by Huawei.</h4>
-                        <br/>
-                        <p style="color:black">Vote for CodeFellow so that we can keep zimsec resources free forever!</p>
-
-                        <p style="color:black">Simply click on the button below and select CodeFellow.</p>
-
-                        <button onclick="handleVoteButtonClick()" type="button" class="btn btn-primary">Go to Vote</button>
-
-                        <br/><br/>
-                        <p id="voting_status" style="color:black"></p>
-                    </div>
-                </div>
-
-                <!--AppsUp Image--->
-                <div class="col-sm-5 right_side_des" style="">
-                    <img class="img-fluid" src="../assets/images/codefellow_appsup.png" alt="Zimsec papers" width="600" style="">
-                </div><!-- End Of AppsUp Image--->
-
-            </div><!---- End of codefellow voting banner--->
-
-
             <!------------------->
             <div>
               <h3 class="white_courier" id="card_title_id">Zimsec Chemistry Paper 3 November 2009</h3>
@@ -126,20 +97,20 @@
                             <button id="dwn_id" type="button" class="btn btn_qp">
                               <i class="fa fa-download"></i><span id="download_file_id"> Question Paper</span></button>
                           </a>
-                        <br/><br/>
+                        </br></br>
                         </div>
-
+                      
                       </div>
                     </div>
                   </div>
-
+                  
                   <div class="col-ms-5" id="ms_id">
                     <div class="card-body">
                       <div class="no-gutters">
                         <div class="">
                           <p class="card-text couri" id="card_solution_size_id">Size : 135 MB</p>
                         </div>
-
+                        
                         <div class="white_courier">
                           <a href="" id="ms_download_id">
                             <button type="button" class="btn btn_ms"><i class="fa fa-download"></i> Marking Scheme </button>
@@ -193,12 +164,12 @@
 
               <div id="upload" class="col-sm-4" style="padding-left: 10px;">
                 </br></br></br></br>
-
+                
                 <div class="white_courier">
                   <h4>Zimsec Papers App <i class="fa fa-mobile" aria-hidden="true"></i></h4>
                   <a class="download-btn" id="play_store_id" href="https://play.google.com/store/apps/details?id=com.edufree.zimsec"><img src="../assets/images/play_store_btn.png" alt="Play Store"></a>
                 </div></br>
-
+                
                 <div class="white_courier">
                   <h4>Support <i class="fa fa-heart love_icon" aria-hidden="true"></i></h4>
                   <p>All the resources on this site were uploaded by other candidates.
@@ -223,17 +194,17 @@
                   </a>
 
                   <a id="facebook_social_id" href="" class="btn btn-social btn-facebook">
-                    <span id="fb_span"  class="fa fa-facebook social_medi_icons"></span>
+                    <span id="fb_span"  class="fa fa-facebook social_medi_icons"></span> 
                   </a>
 
 
                   <a id="whatsapp_social_id" href="" class="btn btn-social btn-whatsapp">
-                    <span id="wh_span"  class="fa fa-whatsapp social_medi_icons"></span>
+                    <span id="wh_span"  class="fa fa-whatsapp social_medi_icons"></span> 
                   </a>
                 </div>
               </div>
               <!------ END OF SIDE ------>
-
+            
             </div>
             <!------------------->
         </div>
@@ -267,7 +238,7 @@
     let val=getCardTitle(paper)+" ("+getCardLevel(paper)+") ";
     card_title.innerText=val;
     //card_level.innerText=getCardLevel(paper);
-    //set the title
+    //set the title 
     document.getElementById("title").innerHTML=page_title;
     //
     displaySelectedPaper(paper);
@@ -292,19 +263,19 @@
 
     // <p> : question paper size
     let card_file_size=document.getElementById("card_file_size_id");
-
+    
     // <p> : solution file size
     let card_solution_size=document.getElementById("card_solution_size_id");
-
+    
     // <a> : anchor tag around file download button
     let file_download_a=document.getElementById("file_download_id");
-
+    
     // <a> : anchor tag around ms button
     let ms_download_a=document.getElementById("ms_download_id");
-
-    // <span> : download
+    
+    // <span> : download 
     let download_file=document.getElementById("download_file_id");
-
+    
     // div : ms
     let ms_div=document.getElementById("ms_id");
 
@@ -410,14 +381,14 @@
     let inner_card=document.createElement("div");
     inner_card.className="row no-gutters";
 
-
+    
     let left_div=document.createElement("div");
     left_div.className="col-ms-1";
 
-    // image
+    // image 
     let pdf_image=document.createElement("img");
     pdf_image.className="card-img pdf_image_style";
-    pdf_image.src="../assets/images/pdf_image.png";
+    pdf_image.src="../assets/images/pdf_image.png"; 
 
     // adding image to left div
     left_div.appendChild(pdf_image);
@@ -440,7 +411,7 @@
     ms.className="card-text ms_style";
     ms.innerText=getSolutionStatus(paper);
 
-    // adding lables to card
+    // adding lables to card 
     card_body.appendChild(file_title);
     card_body.appendChild(file_level);
     card_body.appendChild(ms);
@@ -448,14 +419,14 @@
     //adding card to right Div
     right_div.appendChild(card_body);
 
-    //adding left and right to innner card
+    //adding left and right to innner card 
     inner_card.appendChild(left_div);
     inner_card.appendChild(right_div);
 
     //adding inner_card to card
     card.appendChild(inner_card);
 
-    //add card to link tag
+    //add card to link tag 
     link_tag.appendChild(card);
 
     //let title = document.createElement("p");
@@ -495,7 +466,7 @@
 
       let similarity_number=similarity(subject.toLowerCase(),value.toLowerCase());
       paper['similarity_number']=similarity_number;
-      weightedApts.push(paper);
+      weightedApts.push(paper);    
     });
 
     //sort in descending order
@@ -506,7 +477,7 @@
       displayPaper(item,index);
       //console.log(item);
     });
-
+    
     console.log(weightedApts);
     /*
     filteredApts = filteredApts
@@ -541,7 +512,7 @@
       let level=paper['level'].toLowerCase();
       let type=paper['type'].toLowerCase();
       if(level[0]===filter[0] || type[0]===filter[0]){
-        //fApts.push(paper);
+        //fApts.push(paper); 
         fApts[page_id]=paper;
       }
     });
@@ -568,7 +539,7 @@
       let type=paper['type'].toLowerCase();
       let subject=paper['subject'].toLowerCase();
       if((level[0]===filter[0] || type[0]===filter[0]) && sub==subject){
-        //fApts.push(paper);
+        //fApts.push(paper); 
         fApts[page_id]=paper;
       }
     });
@@ -596,22 +567,21 @@
   twitter_social.setAttribute('href',getTwitterSocialLink());
   whatsapp_social.setAttribute('href',getWhatsappSocialLink());
 
-  let fb_span=document.getElementById("fb_span");
+  let fb_span=document.getElementById("fb_span"); 
   fb_span.onmouseenter = function() {fb_span.style.color="#1D9BF0";};
   fb_span.onmouseleave = function() {fb_span.style.color="white";};
 
 
-  let tw_span=document.getElementById("tw_span");
+  let tw_span=document.getElementById("tw_span"); 
   tw_span.onmouseenter = function() {tw_span.style.color="#1D9BF0";};
   tw_span.onmouseleave = function() {tw_span.style.color="white";};
 
-  let wh_span=document.getElementById("wh_span");
+  let wh_span=document.getElementById("wh_span"); 
   wh_span.onmouseenter = function() {wh_span.style.color="#1D9BF0";};
   wh_span.onmouseleave = function() {wh_span.style.color="white";};
   whatsapp_social.style.display="none";
 </script>
 
-<script type="text/javascript" src="../js/codefellow_voting.js"></script>
 
 </body>
 

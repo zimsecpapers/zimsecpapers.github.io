@@ -79,8 +79,6 @@
             <div>
               <h3 class="white_courier" id="card_title_id">Zimsec Chemistry Paper 3 November 2009</h3>
 
-              <h5 class="white_courier" id="card_title_id" style="color:red;">We are updating the resources on this site, please check again after 24 hours</h5>
-
               <div class="card mb-3" style="padding: 5px;">
                 <div class="row no-gutters">
                   <div class="col-ms-2">
@@ -96,11 +94,10 @@
                         </div>
 
                         <div class="white_courier">
-                        <!--
                           <a href="" id="file_download_id">
                             <button id="dwn_id" type="button" class="btn btn_qp">
                               <i class="fa fa-download"></i><span id="download_file_id"> Question Paper</span></button>
-                          </a>-->
+                          </a>
                         </br></br>
                         </div>
 
@@ -116,10 +113,10 @@
                         </div>
 
                         <div class="white_courier">
-                            <!--
+
                           <a href="" id="ms_download_id">
                             <button type="button" class="btn btn_ms"><i class="fa fa-download"></i> Marking Scheme </button>
-                        </a>-->
+                          </a>
 
                         </div>
                       </div>
@@ -263,8 +260,10 @@
     let type_number=paper['type_number'];
     let file_size=paper['file_size'];
     let solution_file_size=paper['solution_file_size'];
-    let file_link=paper['file_link'];
-    let solution_file_link=paper['solution_file_link'];
+    //let file_link=paper['file_link'];
+    //let solution_file_link=paper['solution_file_link'];
+    let file_link=paper['s3Url'];
+    let solution_file_link=paper['s3SolutionUrl'];
     let type=paper['type'];
 
     // <p> : question paper size

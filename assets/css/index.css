@@ -11,6 +11,10 @@ Version: 1.0.0
 # Normalize
 --------------------------------------------------------------*>*/
 
+.ads {
+   width: 1px;
+}
+
 .index_h2{
     color:yellow;
     font-family:Courier;
@@ -46,4 +50,3 @@ Version: 1.0.0
     display: none; /* hide the BR tag for wider screens (i.e. disable the line break) */
   }
 }
-

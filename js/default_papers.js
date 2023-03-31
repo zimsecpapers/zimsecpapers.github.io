@@ -4265,12 +4265,12 @@ function getWhatsappSocialLink(){
 }
 
 function getZimsecUpload(){
-	let link="https://zimsecpapers.herokuapp.com/upload";
+	let link="https://zambuko.vercel.app/zimsec/action/upload";
 	return link;
 }
 
 function getZimsecFeedback(){
-	let link="https://zimsecpapers.herokuapp.com/feedback";
+	let link="https://zambuko.vercel.app/";
 	return link;
 }
 

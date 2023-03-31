@@ -1,6 +1,4 @@
 
-
-
 let adsWidth = document.getElementsByClassName('ads').offsetWidth;
 let isAdBlockAvailable = false;
 
@@ -18,5 +16,5 @@ if (adsWidth == 0){
 } else {
     isAdBlockAvailable = false;
     // console.log(">> No adblocker present");
-    //console.log("user is null");
+    // console.log("user is null");
 }

@@ -133,40 +133,7 @@
             </div>
             <!------------------->
         </div>
-
-        <!----->
-        <!-- Facebook Like Modal -->
-        <div class="modal fade" id="facebookLikeModal" tabindex="-1" role="dialog" aria-labelledby="facebookLikeLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content text-center">
-              <div class="modal-header">
-                <h5 class="modal-title" id="facebookLikeLabel">Support Free Education ❤️</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  Like past papers for free? Our partners made it happen.
-                </p>
-                <p>
-                  Help them win the <strong>Kutsaga Innovation Challenge</strong> —
-                  just like their post on facebook!
-                </p>
-                <a 
-                  id="voteButton"
-                  href="https://www.facebook.com/share/18XnUzMrkH/" 
-                  target="_blank" 
-                  class="btn btn-primary mt-2"> 
-                  👍 Vote on Facebook
-                </a>
-                <p class="mt-3 mb-0" style="font-size: 0.85rem; color: #888;">
-                  One like = one vote. Thanks for your support 🇿🇼
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!----->
-
+        
       </section> <!--||Single Paper Diplay|-->
 
       <!--|
@@ -698,32 +665,6 @@ alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
-<script>
-  const testingMode = false; // Set to true for dev/testing
-
-  function showLikeModal() {
-    const hasVoted = localStorage.getItem("hasVoted");
-
-    if (testingMode || !hasVoted) {
-      $('#facebookLikeModal').modal('show');
-    }
-  }
-
-  // Trigger modal on Question Paper download
-  document.getElementById('dwn_id').addEventListener('click', function () {
-    setTimeout(showLikeModal, 1000);
-  });
-
-  // Trigger modal on Marking Scheme download
-  document.querySelector('.btn_ms').addEventListener('click', function () {
-    setTimeout(showLikeModal, 1000);
-  });
-
-  // Track vote button click
-  document.getElementById('voteButton').addEventListener('click', function () {
-    localStorage.setItem("hasVoted", "true");
-  });
-</script>
 
 </body>
 

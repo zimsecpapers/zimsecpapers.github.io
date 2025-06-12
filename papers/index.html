@@ -313,18 +313,24 @@
   //document.getElementById("demo").innerHTML = subject;
 
   function displaySelectedPaper(paper){
-    let type_number=paper['type_number'];
-    let file_size=paper['file_size'];
-    let solution_file_size=paper['solution_file_size'];
+    let type_number=paper['typeNumber'];
+    //let file_size=paper['file_size'];
+    //let solution_file_size=paper['solution_file_size'];
+    let file_size=paper['fileSize'];
+    let solution_file_size=paper['fileSize'];
+
+    console.log("secletdd Paper ::: ici "+file_size);
 
     // let file_link=paper['file_link'];
     // let solution_file_link=paper['solution_file_link'];
 
     //let file_link=paper['s3Url'];
     //let solution_file_link=paper['s3SolutionUrl']; 
+    //let file_link=paper['file_link'];
+    //let solution_file_link=paper['solution_file_link'];
 
-    let file_link=paper['file_link'];
-    let solution_file_link=paper['solution_file_link'];
+    let file_link=paper['downloadURL'];
+    let solution_file_link=paper['downloadURL'];
 
     let type=paper['type'];
 
@@ -374,6 +380,10 @@
       ms_div.style.display="none";
       card_file_size.innerText="File"+" : "+file_size;
       download_file.innerText=" Download";
+    }else{
+      ms_div.style.display="none";
+      card_file_size.innerText="File"+" : "+file_size;
+      download_file.innerText=" Download";
     }
 
   }
@@ -415,38 +425,38 @@
 
   function handleMouseLeavesDiv(){
     console.log("***handleMouseLeavesDiv()");
-    //let card=document.getElementById("card_id");
-    //card.style.background="white";
+    // let card=document.getElementById("card_id"); :: 
+    // card.style.background="white";  :::
   }
 
   function handleLinkClick(item){
     console.log("hey Clicked : "+item);
-    //window.open("papers/index.html?"+item,"_self");
+    // window.open("papers/index.html?"+item,"_self"); 
   }
 
   function displayPaper(paper,index){
     let mainDiv = document.getElementById("myList");
 
-    // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
+    // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme 
     let page_title=paper['page_title'];
 
     // url parameter : zimsec-green-book-geography-2008-2010-o-level
-    let url_parameter=paper['page_id'];
+    let url_parameter=paper['id'];
 
     let link_tag=document.createElement("a");
-    //link_tag.className="link_style";
+    // link_tag.className="link_style";
     link_tag.style.all="unset";
     link_tag.setAttribute('href', "index.html?"+url_parameter);
 
     let card=document.createElement("div");
     card.id="card_id";
-    card.className="card mb-3 card_style";
-    card.onmouseenter = function() {card.style.background="#ffffe6";};
+    card.className="card mb-3 card_style"; 
+    card.onmouseenter = function() {card.style.background="#ffffe6";}; 
     card.onmouseleave = function() {card.style.background="white";};
     card.onclick = function() {handleLinkClick(url_parameter);};
 
-    let inner_card=document.createElement("div");
-    inner_card.className="row no-gutters";
+    let inner_card=document.createElement("div"); 
+    inner_card.className="row no-gutters"; 
 
 
     let left_div=document.createElement("div");
@@ -602,9 +612,10 @@
     Object.keys(files).map(function (page_id) {
       // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
       let paper=files[page_id];
-      let level=paper['level'].toLowerCase();
-      let type=paper['type'].toLowerCase();
-      let subject=paper['subject'].toLowerCase();
+      let level = (paper?.level || '').toLowerCase();
+      let type = (paper?.type || '').toLowerCase();
+      let subject = (paper?.subject || '').toLowerCase();
+
       if((level[0]===filter[0] || type[0]===filter[0]) && sub==subject){
         //fApts.push(paper);
         fApts[page_id]=paper;
@@ -664,8 +675,6 @@ class="statcounter" src="https://c.statcounter.com/12859640/0/4dfc422f/1/"
 alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
-
-
 </body>
 
 </html>

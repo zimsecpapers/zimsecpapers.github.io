@@ -1,4 +1,5 @@
-{
+function getData(){
+	let dt={
   "-mxukle9fyeb4pvj2ydk": {
     "file_link": "https://firebasestorage.googleapis.com/v0/b/zimsec-3ad62.appspot.com/o/production_papers%2Fnt_chemistry_notes_a_level_eb36c2-f8a8-7760-84bb-f063cbaaa6c.pdf?alt=media&token=7bf9d11c-f7d9-4579-848d-9e3e59630cc1",
     "file_size": "12.12 MB",
@@ -13,9 +14,9 @@
     "month": "",
     "notes_topic": "Bio Chemistry Option Booklet",
     "page_id": "-mxukle9fyeb4pvj2ydk",
-    "page_title": "A Level Bio Chemistry Option Booklet", 
+    "page_title": "A Level Bio Chemistry Option Booklet",
     "paper_level": -1,
-    "paper_site": "https://zimsecpapers.github.io/papers/index.html?-mxukle9fyeb4pvj2ydk", 
+    "paper_site": "https://zimsecpapers.github.io/papers/index.html?-mxukle9fyeb4pvj2ydk",
     "s3FileName": "mxukle9fyeb4pvj2ydk--MxUKlE9Fyeb4Pvj2yDk.pdf",
     "s3SolutionFileName": "",
     "s3SolutionUrl": "",
@@ -780,13 +781,13 @@
     "uploader_phone": "",
     "uploader_username": "",
     "year": -1
-  },
-  "-mypts9gizos8sc_npcy": {
+  }, 
+  "-mypts9gizos8sc_npcy": { 
     "file_link": "https://firebasestorage.googleapis.com/v0/b/zimsec-3ad62.appspot.com/o/production_papers%2Fnt_mathematics_notes_o_level_dd3cace-3d12-f1b7-d14d-0072787724cb.pdf?alt=media&token=eec6e0a0-28f0-4660-bcdb-a24e61e657ae",
     "file_size": "14.26 MB",
     "from_year": -1,
-    "hasSolutionFile": false,
-    "id": "-MyPTs9gIZOs8sc_NPCY",
+    "hasSolutionFile": false, 
+    "id": "-MyPTs9gIZOs8sc_NPCY", 
     "index": 106,
     "isFileOnS3": true,
     "key": "-mypts9gizos8sc_npcy",
@@ -4225,4 +4226,158 @@
     "uploader_username": "",
     "year": -1
   }
+};
+	return shuffleObject(dt);
+}
+
+function shuffleObject(obj){
+    // new obj to return
+  let newObj = {};
+    // create keys array 
+  var keys = Object.keys(obj);
+    // randomize keys array  
+    keys.sort(function(a,b){return Math.random()- 0.5;});
+  // save in new array 
+    keys.forEach(function(k) {
+        newObj[k] = obj[k];
+});
+  return newObj;
+}
+
+function getPlayStoreLink(){
+	let link="https://play.google.com/store/apps/details?id=com.edufree.zimsec";
+	return link;
+}
+
+function getFacebookSocialLink(){
+	let link="https://web.facebook.com/zimsecpaperz";
+	return link;
+}
+
+function getTwitterSocialLink(){
+	let link="https://twitter.com/zimsec_papers";
+	return link;
+}
+
+function getWhatsappSocialLink(){
+	let link="#papers_id";
+	return link;
+}
+
+function getZimsecUpload(){
+	let link="https://zambuko.vercel.app/zimsec/action/upload";
+	return link;
+}
+
+function getZimsecFeedback(){
+	let link="https://zambuko.vercel.app/";
+	return link;
+}
+
+
+function similarity(s1, s2) {
+  var longer = s1;
+  var shorter = s2;
+  if (s1.length < s2.length) {
+    longer = s2;
+    shorter = s1;
+  }
+  var longerLength = longer.length;
+  if (longerLength == 0) {
+    return 1.0;
+  }
+  return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+
+}
+
+function editDistance(s1, s2) {
+  s1 = s1.toLowerCase();
+  s2 = s2.toLowerCase();
+
+  var costs = new Array();
+  for (var i = 0; i <= s1.length; i++) {
+    var lastValue = i;
+    for (var j = 0; j <= s2.length; j++) {
+      if (i == 0)
+        costs[j] = j;
+      else {
+        if (j > 0) {
+          var newValue = costs[j - 1];
+          if (s1.charAt(i - 1) != s2.charAt(j - 1))
+            newValue = Math.min(Math.min(newValue, lastValue),
+              costs[j]) + 1;
+          costs[j - 1] = lastValue;
+          lastValue = newValue;
+        }
+      }
+    }
+    if (i > 0)
+      costs[s2.length] = lastValue;
+  }
+  return costs[s2.length];
+
+}
+
+/*title to be displayed on papers List*/
+function getCardTitle(paper){
+	let type_number=paper['type_number'];
+	let subject=paper['subject'];
+    let page_title=paper['page_title'];
+    let type=paper['type'];
+    let year=paper['year'];
+    let from_year=paper['from_year'];
+    let to_year=paper['to_year'];
+    let level=paper['level'];
+    let file_size=paper['file_size'];
+    let solution_file_size=paper['solution_file_size'];
+    let paper_level=paper['paper_level'];
+    let month=paper['month'];
+    let notes_topic=paper['notes_topic'];
+
+    let card_title="";
+    if(type_number===0){
+    	card_title="Zimsec "+subject+" Paper "+paper_level+" "+month+" "+year;
+    	return card_title;
+    }
+
+    if(type_number===1 || type_number===2){
+    	card_title="Zimsec "+subject+" "+type+" "+from_year+"-"+to_year;
+    	return card_title;
+    }
+
+    if(type_number===3){
+    	if(notes_topic.length>0){
+    		card_title=notes_topic;
+    		return card_title;
+    	}
+    	card_title=subject+" "+"Textbook/Notes";
+    	return card_title;
+    }
+
+    return subject+" "+level;
+}
+
+
+
+/*Level to be displayed on papers List*/
+function getCardLevel(paper){
+    let level=paper['level'];
+    return level;
+}
+
+
+
+/*small ms*/
+function getSolutionStatus(paper){
+    let level=paper['level'];
+    let type_number=paper['type_number'];
+    let file_size=paper['file_size'];
+    let result="";
+    if(type_number===0){
+    	result="Marking Scheme Available";
+    	return result;
+    }
+
+    result="File Size : "+file_size;
+   	return result;
 }

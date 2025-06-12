@@ -4,16 +4,15 @@
   <title id="title">Zimsec O and A level past exam questions and marking schemes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="title">Single paper page</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!--|Logo|-->
+  <!-- |Logo| -->
   <link rel="icon" href="../assets/images/zimsec_logo1.png">
 
-    <!--|papers_list section css|-->
+    <!-- |papers_list section css |-->
   <link href='../assets/css/papers_list.css' rel='stylesheet' type='text/css'>
 
   <!-- Add icon library -->
@@ -290,7 +289,8 @@
     let solution_file_link=paper['solution_file_link'];
     */
   if(paper!=null){
-    let page_title=paper['page_title'];
+    //let page_title=paper['page_title'];
+    let page_title=paper['seoTitle'];
     let card_title=document.getElementById("card_title_id");
     //let card_level=document.getElementById("card_level_id");
     //let val=getCardTitle(paper)+" ( "+getCardLevel(paper)+" ) ";
@@ -298,7 +298,7 @@
     card_title.innerText=val;
     //card_level.innerText=getCardLevel(paper);
     //set the title
-    document.getElementById("title").innerHTML=page_title;
+    document.title = page_title;
     //
     displaySelectedPaper(paper);
   }else{
@@ -313,18 +313,24 @@
   //document.getElementById("demo").innerHTML = subject;
 
   function displaySelectedPaper(paper){
-    let type_number=paper['type_number'];
-    let file_size=paper['file_size'];
-    let solution_file_size=paper['solution_file_size'];
+    let type_number=paper['typeNumber'];
+    //let file_size=paper['file_size'];
+    //let solution_file_size=paper['solution_file_size'];
+    let file_size=paper['fileSize'];
+    let solution_file_size=paper['fileSize'];
+
+    console.log("secletdd Paper ::: ici "+file_size);
 
     // let file_link=paper['file_link'];
     // let solution_file_link=paper['solution_file_link'];
 
     //let file_link=paper['s3Url'];
     //let solution_file_link=paper['s3SolutionUrl']; 
+    //let file_link=paper['file_link'];
+    //let solution_file_link=paper['solution_file_link'];
 
-    let file_link=paper['file_link'];
-    let solution_file_link=paper['solution_file_link'];
+    let file_link=paper['downloadURL'];
+    let solution_file_link=paper['downloadURL'];
 
     let type=paper['type'];
 
@@ -374,6 +380,10 @@
       ms_div.style.display="none";
       card_file_size.innerText="File"+" : "+file_size;
       download_file.innerText=" Download";
+    }else{
+      ms_div.style.display="none";
+      card_file_size.innerText="File"+" : "+file_size;
+      download_file.innerText=" Download";
     }
 
   }
@@ -415,38 +425,39 @@
 
   function handleMouseLeavesDiv(){
     console.log("***handleMouseLeavesDiv()");
-    //let card=document.getElementById("card_id");
-    //card.style.background="white";
+    // let card=document.getElementById("card_id"); :: 
+    // card.style.background="white";  :::
   }
 
   function handleLinkClick(item){
     console.log("hey Clicked : "+item);
-    //window.open("papers/index.html?"+item,"_self");
+    // window.open("papers/index.html?"+item,"_self"); 
   }
 
   function displayPaper(paper,index){
     let mainDiv = document.getElementById("myList");
 
-    // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
-    let page_title=paper['page_title'];
+    // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme 
+    // let page_title=paper['page_title'];
+    let page_title=paper['seoTitle'];
 
     // url parameter : zimsec-green-book-geography-2008-2010-o-level
-    let url_parameter=paper['page_id'];
+    let url_parameter=paper['id'];
 
     let link_tag=document.createElement("a");
-    //link_tag.className="link_style";
+    // link_tag.className="link_style";
     link_tag.style.all="unset";
     link_tag.setAttribute('href', "index.html?"+url_parameter);
 
     let card=document.createElement("div");
     card.id="card_id";
-    card.className="card mb-3 card_style";
-    card.onmouseenter = function() {card.style.background="#ffffe6";};
+    card.className="card mb-3 card_style"; 
+    card.onmouseenter = function() {card.style.background="#ffffe6";}; 
     card.onmouseleave = function() {card.style.background="white";};
     card.onclick = function() {handleLinkClick(url_parameter);};
 
-    let inner_card=document.createElement("div");
-    inner_card.className="row no-gutters";
+    let inner_card=document.createElement("div"); 
+    inner_card.className="row no-gutters"; 
 
 
     let left_div=document.createElement("div");
@@ -496,39 +507,40 @@
     //add card to link tag
     link_tag.appendChild(card);
 
-    //let title = document.createElement("p");
-    //let title=document.getElementById("display_title");
-    //title.innerText = page_title;
-    //tag.setAttribute('href', "papers/index.html?"+url_parameter);
-    //li.addEventListener('click',handleLinkClick(item));
-    //tag.onclick = function() {handleLinkClick(url_parameter);};
-    //mainDiv.appendChild(tag);
+    // let title = document.createElement("p");
+    // let title=document.getElementById("display_title");
+    // title.innerText = page_title;
+    // tag.setAttribute('href', "papers/index.html?"+url_parameter);
+    // li.addEventListener('click',handleLinkClick(item));
+    // tag.onclick = function() {handleLinkClick(url_parameter);};
+    // mainDiv.appendChild(tag);
     if(index==0){
       mainDiv.replaceChildren(link_tag);
     }else{
       mainDiv.appendChild(link_tag);
     }
-    //let newLine = document.createElement("br");
-    //mainDiv.appendChild(newLine);
-    //console.log(url_parameter);
+    // let newLine = document.createElement("br");
+    // mainDiv.appendChild(newLine);
+    // console.log(url_parameter);
   }
 
   function trackChange(value) {
-    //window.open("http://www.google.com/search?output=search&q=" + value)
+    // window.open("http://www.google.com/search?output=search&q=" + value)
     console.log("search : "+value);
-    //let filteredApts=getData();
+    // let filteredApts=getData();
     let filteredApts=getFilteredApts();
 
     let data= filteredApts;
-    //console.log("size bef : "+Object.keys(filteredApts).length);
+    // console.log("size bef : "+Object.keys(filteredApts).length);
 
     let weightedApts=[];
     let ind="similarity_number";
+
     Object.keys(data).map(function (page_id) {
       // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
       let paper=filteredApts[page_id];
       let subject=paper['subject'];
-      let page_title=paper['page_title'];
+      let page_title=paper['seoTitle'];
       let type=paper['type'];
 
       let similarity_number=similarity(subject.toLowerCase(),value.toLowerCase());
@@ -550,7 +562,8 @@
     filteredApts = filteredApts
       .filter(eachItem => {
         console.log(eachItem);
-    });*/
+    });
+    */
   }//end of trackChange
 
 
@@ -595,16 +608,17 @@
       console.log("length==0 Here");
       return files;
     }
-
+    
     let sub=selected_file['subject'].toLowerCase();
 
     let fApts={};
     Object.keys(files).map(function (page_id) {
       // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
       let paper=files[page_id];
-      let level=paper['level'].toLowerCase();
-      let type=paper['type'].toLowerCase();
-      let subject=paper['subject'].toLowerCase();
+      let level = (paper?.level || '').toLowerCase();
+      let type = (paper?.type || '').toLowerCase();
+      let subject = (paper?.subject || '').toLowerCase();
+
       if((level[0]===filter[0] || type[0]===filter[0]) && sub==subject){
         //fApts.push(paper);
         fApts[page_id]=paper;
@@ -664,8 +678,6 @@ class="statcounter" src="https://c.statcounter.com/12859640/0/4dfc422f/1/"
 alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
-
-
 </body>
 
 </html>

@@ -97,13 +97,13 @@
                     <div class="">
                         <a class="download-btn" id="play_store_id" href="https://play.google.com/store/apps/details?id=com.edufree.zimsec"><img src="assets/images/play_store_btn.png" alt="Play Store"></a>
                         &nbsp; &nbsp; &nbsp; &nbsp;<br id="brk_phones"/><br id="brk_phones"/>
-                        <a class="download-btn" href="#"><img src="assets/images/app_store_btn.png" alt="App Store"></a>
+                        <a class="download-btn" href="https://play.google.com/store/apps/details?id=com.edufree.zimsec"><img src="assets/images/app_store_btn.png" alt="App Store"></a>
                     </div>
 
-                    <!---Features------->
+                    <!--- Features ------->
                     <section class="section">
                           <div class="">
-                              <!--|Section Header|-->
+                              <!--|Section Header| -->
                               </br></br>
                               <header class="">
                                 <h2 class="index_h2">Resources Available on the app</h2>
@@ -285,7 +285,7 @@
 <script type="text/javascript" src="js/default_papers.js"></script>
 <script type="text/javascript">
   function handleDropdown(value){
-    //console.log("drop down >> "+value);
+    console.log("drop down >> "+value);
     document.getElementById("level_label").innerHTML = value;
     document.getElementById("level_label").value=value;
     //let res=getSelectedFilter();
@@ -328,10 +328,12 @@
     let mainDiv = document.getElementById("myList");
 
     // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
-    let page_title=paper['page_title'];
+    //let page_title=paper['page_title'];
+    let page_title="kutaura nemu";
 
     // url parameter : zimsec-green-book-geography-2008-2010-o-level
-    let url_parameter=paper['page_id'];
+    // let url_parameter=paper['page_id'];
+    let url_parameter=paper['id'];
 
     let link_tag=document.createElement("a");
     //link_tag.className="link_style";
@@ -501,8 +503,9 @@
     Object.keys(files).map(function (page_id) {
       // page title : zimsec a level chemistry paper 3 november 2008 and marking scheme
       let paper=files[page_id];
-      let level=paper['level'].toLowerCase();
-      let type=paper['type'].toLowerCase();
+      let level = paper['level'] ? paper['level'].toLowerCase() : '';
+      let type = paper['type'] ? paper['type'].toLowerCase() : '';
+      
       if(level[0]===filter[0] || type[0]===filter[0]){
         //fApts.push(paper);
         fApts[page_id]=paper;
@@ -513,7 +516,7 @@
 </script>
 
 <script>
-  /*<!------ RIGHT SIDE------>*/
+  /*<!------ RIGHT SID->*/
   /*upload link*/
   let upload_a=document.getElementById("upload_id");
   upload_a.setAttribute('href',getZimsecUpload());
